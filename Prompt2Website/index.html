@@ -122,20 +122,39 @@
     <div class="bg-grid"></div>
 
     <!-- Navigation / Header -->
-    <header class="fixed top-0 w-full z-50 glass-card rounded-none border-t-0 border-l-0 border-r-0 border-b border-white/10">
+    <header class="fixed top-0 w-full z-50 glass-card rounded-none border-t-0 border-l-0 border-r-0 border-b border-white/10 bg-darknavy/80">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <img src="https://i.postimg.cc/CxhQynyk/blobhttpsweb-whatsapp-comef1f2f0d-01df-4591-9cfe-1a7607af17de.png" alt="AnnurPro Solutions Logo" class="h-10 object-contain drop-shadow-[0_0_8px_rgba(0,229,255,0.5)]">
+                <img src="https://i.postimg.cc/CxhQynyk/blobhttpsweb-whatsapp-comef1f2f0d-01df-4591-9cfe-1a7607af17de.png" alt="AnnurPro Solutions Logo" class="h-10 object-contain drop-shadow-[0_0_8px_rgba(0,229,255,0.5)] relative z-50">
             </div>
-            <nav class="hidden md:flex gap-8 font-heading text-sm tracking-widest text-gray-300">
+            
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex gap-8 font-heading text-sm tracking-widest text-gray-300 items-center">
                 <a href="#about" class="hover:neon-text-cyan transition-colors">INFO</a>
                 <a href="#speaker" class="hover:neon-text-cyan transition-colors">SPEAKER</a>
                 <a href="#pricing" class="hover:neon-text-cyan transition-colors">TIKET</a>
+                <!-- TUKAR href ke #payment -->
+                <a href="#payment" class="btn-neon px-6 py-2 rounded-full font-heading text-sm font-bold tracking-wider text-white">
+                    DAFTAR
+                </a>
             </nav>
-            <!-- TUKAR href ke #payment -->
-            <a href="#payment" class="btn-neon px-6 py-2 rounded-full font-heading text-sm font-bold tracking-wider text-white">
-                DAFTAR
-            </a>
+
+            <!-- Mobile Toggle Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-white text-2xl focus:outline-none relative z-50">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-darknavy/95 backdrop-blur-xl border-b border-white/10 shadow-2xl">
+            <nav class="flex flex-col px-6 py-6 gap-6 font-heading text-sm tracking-widest text-gray-300 text-center">
+                <a href="#about" class="mobile-link hover:neon-text-cyan transition-colors">INFO</a>
+                <a href="#speaker" class="mobile-link hover:neon-text-cyan transition-colors">SPEAKER</a>
+                <a href="#pricing" class="mobile-link hover:neon-text-cyan transition-colors">TIKET</a>
+                <a href="#payment" class="mobile-link btn-neon px-6 py-3 rounded-full font-bold text-white w-full max-w-xs mx-auto">
+                    DAFTAR SEKARANG
+                </a>
+            </nav>
         </div>
     </header>
 
@@ -151,7 +170,7 @@
                     <span class="text-white">PROMPT</span><span class="gradient-text">2WEBSITE</span>
                 </h1>
                 <p class="text-xl text-gray-400 mb-8 max-w-lg leading-relaxed">
-                    Bina sistem web berkuasa AI dengan pantas. Kuasai kejuruteraan prompt dan dominasi enjin carian dengan teknik SEO terbukti.
+                    Jom bina website menggunakan Ai dan belajar juga bagaimana SEO berfungsi (setup and run).
                 </p>
                 
                 <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
@@ -164,7 +183,7 @@
                 <!-- Quick info pills -->
                 <div class="mt-10 flex flex-wrap gap-4 text-sm font-heading">
                     <div class="flex items-center gap-2 text-gray-300">
-                        <i class="far fa-calendar-alt neon-text-cyan"></i> 10 & 17 April
+                        <i class="far fa-calendar-alt neon-text-cyan"></i> 10 @ 17 April
                     </div>
                     <div class="flex items-center gap-2 text-gray-300">
                         <i class="far fa-clock neon-text-purple"></i> 9.15 PM - 11.30 PM
@@ -173,7 +192,7 @@
             </div>
 
             <!-- Visual / Mockup -->
-            <div class="lg:w-1/2 relative z-10 w-full flex justify-center mt-28 lg:mt-40">
+            <div class="lg:w-1/2 relative z-10 w-full flex justify-center mt-16 lg:mt-40">
                 <!-- Glowing backdrop -->
                 <div class="absolute inset-0 w-full bg-gradient-to-tr from-neoncyan/20 to-neonpurple/20 blur-3xl -z-10 rounded-full"></div>
                 
@@ -235,7 +254,7 @@
                         <i class="fa-solid fa-magnifying-glass-chart text-3xl neon-text-purple"></i>
                     </div>
                     <h3 class="font-heading font-bold text-xl mb-2">SEO Mastery</h3>
-                    <p class="text-gray-400 text-sm">Teknik kedudukan enjin carian tertinggi. *Termasuk rakaman eksklusif di Telegram.</p>
+                    <p class="text-gray-400 text-sm">(RAKAMAN)Teknik kedudukan enjin carian tertinggi. *Termasuk rakaman eksklusif di Telegram.</p>
                 </div>
             </div>
             
@@ -243,12 +262,12 @@
             <div class="mt-12 glass-card border-l-4 border-l-neoncyan p-6 flex flex-col md:flex-row justify-between items-center gap-6">
                 <div>
                     <h4 class="font-heading text-xl font-bold mb-1">JADUAL WEBINAR</h4>
-                    <p class="text-gray-400 text-sm">Dua sesi intensif untuk memastikan anda kuasai sepenuhnya.</p>
+                    <p class="text-gray-400 text-sm">Sesi intensif untuk memastikan anda kuasai sepenuhnya.</p>
                 </div>
                 <div class="flex flex-wrap gap-4 text-center md:text-right">
                     <div class="bg-white/5 px-4 py-2 rounded-lg border border-white/10">
                         <div class="text-xs text-gray-500 font-heading">TARIKH</div>
-                        <div class="font-bold text-white">10 & 17 Apr 2026</div>
+                        <div class="font-bold text-white">10 atau 17 Apr 2026</div>
                     </div>
                     <div class="bg-white/5 px-4 py-2 rounded-lg border border-white/10">
                         <div class="text-xs text-gray-500 font-heading">MASA</div>
@@ -267,7 +286,7 @@
     <section id="portfolio" class="py-20 relative z-10">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="font-heading text-3xl lg:text-4xl font-bold mb-4">BUKTI & <span class="gradient-text">TESTIMONI</span></h2>
+                <h2 class="font-heading text-3xl lg:text-4xl font-bold mb-4"><span class="gradient-text">TESTIMONI</span></h2>
                 <div class="h-1 w-24 bg-gradient-to-r from-neoncyan to-neonpurple mx-auto rounded-full mb-6"></div>
                 <p class="text-gray-400 max-w-2xl mx-auto">Contoh hasil laman web sebenar pelanggan & peribadi yang dibina serta dioptimumkan sepenuhnya menggunakan teknik AI & SEO dari webinar ini.</p>
             </div>
@@ -286,14 +305,14 @@
                     <i class="fa-solid fa-arrow-up-right-from-square text-gray-600 group-hover:text-neoncyan transition-colors"></i>
                 </a>
 
-                <a href="https://www.voltake.com/" target="_blank" class="glass-card p-6 flex items-center justify-between hover:neon-border-purple transition-all group">
+                <a href="https://rawatanbilalsyifa3.netlify.app/" target="_blank" class="glass-card p-6 flex items-center justify-between hover:neon-border-purple transition-all group">
                     <div class="flex items-center gap-4">
                         <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center border border-white/10 group-hover:bg-neonpurple/10 transition-colors">
                             <i class="fa-solid fa-bolt text-neonpurple text-xl"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-white text-lg group-hover:text-neonpurple transition-colors">Voltake</h4>
-                            <p class="text-sm text-gray-500">www.voltake.com</p>
+                            <h4 class="font-bold text-white text-lg group-hover:text-neonpurple transition-colors">Rawatan Bilal</h4>
+                            <p class="text-sm text-gray-500">rawatanbilalsyifa3.netlify.app</p>
                         </div>
                     </div>
                     <i class="fa-solid fa-arrow-up-right-from-square text-gray-600 group-hover:text-neonpurple transition-colors"></i>
@@ -342,7 +361,7 @@
                     </div>
                     <!-- Cyberpunk decorative elements -->
                     <div class="absolute -right-4 top-1/4 glass-card px-3 py-1 text-xs font-heading border-neoncyan text-neoncyan">SYS.ADMIN</div>
-                    <div class="absolute -left-4 bottom-1/4 glass-card px-3 py-1 text-xs font-heading border-neonpurple text-neonpurple">AI_EXPERT</div>
+                    <div class="absolute -left-4 bottom-1/4 glass-card px-3 py-1 text-xs font-heading border-neonpurple text-neonpurple">AI_PRACTITIONER</div>
                 </div>
 
                 <!-- Speaker Info -->
@@ -357,14 +376,15 @@
 
 Beliau memiliki Ijazah Sarjana Sains (Big Data) dari Universiti Sains Malaysia (USM) serta Ijazah Sarjana Muda Sains Aktuari dari Universiti Teknologi MARA (UiTM).
 
-Dengan pengalaman dalam analisis data, pembangunan dashboard, dan sistem pelaporan, beliau juga berkongsi ilmu sebagai instructor untuk topik seperti Google Sheets, AppSheet, Looker Studio dan data visualization.
+Dengan pengalaman dalam analisis data, pembangunan dashboard, dan sistem pelaporan, beliau juga berkongsi ilmu sebagai instructor untuk topik seperti Google Sheets, Canva Ai, Gemini Ai, Looker Studio dan Data Visualization.
 
 Dalam webinar ini, beliau akan tunjuk cara mudah menukar prompt menjadi website yang berfungsi — langkah demi langkah, tanpa coding..
                     </p>
                     <div class="flex gap-4 justify-center lg:justify-start">
-                        <span class="text-2xl text-gray-500 hover:text-white transition-colors cursor-pointer"><i class="fa-brands fa-linkedin"></i></span>
-                        <span class="text-2xl text-gray-500 hover:text-white transition-colors cursor-pointer"><i class="fa-brands fa-twitter"></i></span>
-                        <span class="text-2xl text-gray-500 hover:text-white transition-colors cursor-pointer"><i class="fa-solid fa-globe"></i></span>
+                        <a href="https://www.linkedin.com/in/ts-ruzbihan-bakhtiar-b0519b341/" target="_blank" rel="noopener noreferrer" class="text-2xl text-gray-500 hover:text-white transition-colors cursor-pointer"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.threads.com/@ibnu_alqalasadi" target="_blank" rel="noopener noreferrer" class="text-2xl text-gray-500 hover:text-white transition-colors cursor-pointer"><i class="fa-brands fa-threads"></i></a>
+                        <a href="https://www.tiktok.com/@bro_ruz" target="_blank" rel="noopener noreferrer" class="text-2xl text-gray-500 hover:text-white transition-colors cursor-pointer"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://ruzprompt.my/" target="_blank" rel="noopener noreferrer" class="text-2xl text-gray-500 hover:text-white transition-colors cursor-pointer"><i class="fa-solid fa-globe"></i></a>
                     </div>
                 </div>
             </div>
@@ -444,7 +464,7 @@ Dalam webinar ini, beliau akan tunjuk cara mudah menukar prompt menjadi website 
                         <ul class="space-y-4 mb-6 flex-grow relative z-10">
                             <li class="flex items-start gap-3 text-white text-sm">
                                 <i class="fa-solid fa-check text-neoncyan mt-1 drop-shadow-[0_0_5px_#00E5FF]"></i>
-                                <span>Akses Sesi Live (10 & 17 April)</span>
+                                <span>Akses Sesi Live (10 @ 17 April)</span>
                             </li>
                             <li class="flex items-start gap-3 text-white text-sm">
                                 <i class="fa-solid fa-check text-neoncyan mt-1 drop-shadow-[0_0_5px_#00E5FF]"></i>
@@ -486,11 +506,11 @@ Dalam webinar ini, beliau akan tunjuk cara mudah menukar prompt menjadi website 
                     <ul class="space-y-4 mb-8 flex-grow">
                         <li class="flex items-start gap-3 text-gray-300 text-sm">
                             <i class="fa-solid fa-check text-neonpurple mt-1"></i>
-                            <span>Akses Sesi Live (10 & 17 April)</span>
+                            <span>Akses Sesi Live (10 @ 17 April)</span>
                         </li>
                         <li class="flex items-start gap-3 text-gray-300 text-sm">
                             <i class="fa-solid fa-check text-neonpurple mt-1"></i>
-                            <span>Rakaman Penuh Webinar</span>
+                            <span>Rakaman Video Step by Step</span>
                         </li>
                         <li class="flex items-start gap-3 text-gray-300 text-sm">
                             <i class="fa-solid fa-check text-neonpurple mt-1"></i>
@@ -543,5 +563,34 @@ Dalam webinar ini, beliau akan tunjuk cara mudah menukar prompt menjadi website 
         </div>
     </footer>
 
+    <!-- Script untuk Mobile Menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            const links = document.querySelectorAll('.mobile-link');
+            const icon = btn.querySelector('i');
+
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                if(menu.classList.contains('hidden')) {
+                    icon.classList.remove('fa-times'); // buang ikon pangkah
+                    icon.classList.add('fa-bars');   // letak ikon hamburger
+                } else {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                }
+            });
+
+            // Tutup menu secara automatik bila link ditekan
+            links.forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
